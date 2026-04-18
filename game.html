@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="assets/audio/bg.mp3" type="audio/mpeg">
+</audio>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="gameOverScreen" class="hidden">
+    <h1>GAME OVER</h1>
+    <p id="scoreText"></p>
+    <button onclick="restart()">Restart</button>
+    <button onclick="home()">Home</button>
+    <button onclick="leaderboard()">Leaderboard</button>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>

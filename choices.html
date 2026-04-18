@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="center sun-bg">
+
+<img src="assets/ui/heart.png" class="heart-img top-left">
+<img src="assets/ui/heart.png" class="heart-img top-right">
+<img src="assets/ui/heart.png" class="heart-img bottom-left">
+<img src="assets/ui/heart.png" class="heart-img bottom-right">
+
+<h1>Select Your Bird</h1>
+
+<div class="bird-select">
+    <img src="assets/birds/bird1_1.png" onclick="selectBird('bird1')">
+    <img src="assets/birds/bird2_1.png" onclick="selectBird('bird2')">
+</div>
+
+<button onclick="startGame()">START GAME</button>
+
+<script>
+let selectedBird = "bird1";
+
+function selectBird(bird) {
+    selectedBird = bird;
+    localStorage.setItem("bird", bird);
+}
+
+function startGame() {
+    window.location.href = "game.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+}
+
+.sun-bg {
+    background: linear-gradient(to bottom, #FFD54F, #FFB300);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 80px;
+    color: #333;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.bird-select img {
+    width: 140px; /* slightly bigger */
+    margin: 20px;
+    cursor: pointer;
+
+    /* 🔥 MAKE IMAGE CRISP */
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    /* optional polish */
+    filter: contrast(1.1) brightness(1.05);
+    transition: transform 0.2s ease;
+}
+
+/* hover effect */
+.bird-select img:hover {
+    transform: scale(1.1);
+}
+
+canvas {
+    display: block;
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* existing styles remain unchanged */
+
+.sun-bg {
+    background: linear-gradient(to bottom, #FFD54F, #FFB300);
+}
+
+.heart-img {
+    position: absolute;
+    width: 80px; /* adjust size if needed */
+    image-rendering: pixelated;
+}
+
+.top-left { top: 20px; left: 20px; }
+.top-right { top: 20px; right: 20px; }
+.bottom-left { bottom: 20px; left: 20px; }
+.bottom-right { bottom: 20px; right: 20px; }
